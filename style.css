@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.flexible-container {
+    display: flex;
+}
+.center {
+    text-align: center;
+}
+p {
+    color: gray;
+}
+.star {
+    color: indianred;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-link ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background: transparent;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+.hero-btn:hover {
+    border: 1px solid #FA4335;
+    background: #FA4335;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-link ul li {
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-link ul {
+        padding: 30px;
+    }
+}
+
+/*------ course ------*/
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 80px;
+}
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.offer-box div {
+    width: 30%;
+    text-align: center;
+    background-color: #f1e3e0;
+    padding: 30px 30px;
+    margin: 80px 20px 100px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.offer-box div:hover {
+    box-shadow: 5px 5px 20px gray;
+}
+.offer-box div h3 {
+    margin-bottom: 20px;
+}
+
+/*------ global-campus ------*/
+.global-campus {
+    padding-bottom: 100px;
+}
+.global-campus h1,p {
+    text-align: center;
+}
+.global-campus h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.campuses {
+    justify-content: center;
+}
+.campuses div {
+    width: 24%;
+    margin: 60px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.campuses div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/*----- Our Fecilities -----*/
+.our-facilities {
+    padding-bottom: 100px;
+}
+.f-head {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.facilities {
+    padding: 60px 80px;
+    justify-content: center;
+}
+.facilitie {
+    width: 25%;
+    margin: 0 30px;
+}
+.facilitie h3, p {
+    text-align: left;
+}
+.facilitie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*----- Testimonial -----*/
+.testimonial {
+    padding-bottom: 100px;
+    text-align: center;
+}
+.testimonial h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.reviews {
+    justify-content: center;
+}
+.review-box {
+    width: 40%;
+    height: 200px;
+    background: #f0e0e0;
+    margin: 60px 30px 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.reviewer-img {
+    width: 20%;
+}
+.reviewer-txt {
+    width: 80%;
+    text-align: left;
+    margin-top: 20px;
+}
+.reviewer-txt h3 {
+    margin: 10px 0;
+}
+.reviewer-img img {
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/*----- Call to Action -----*/
+.cta {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.cta-main {
+    width: 70%;
+    height: 300px;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0.530),rgba(0, 0, 0, 0.530)), url(./images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: #fff;
+}
+.cta-text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 60px 0 25px;text-transform: capitalize;
+}
+
+/*----- Footer -----*/
+footer {
+    text-align: center;
+}
+footer h3 {
+    margin: 20px 0;
+}
+footer p {
+    width: 68%;
+    margin: 0 auto;
+}
+.socil-links {
+    margin-top: 25px;
+}
+.socil-links i {
+    margin: 20px 15px;
+}
+.foot-txt {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
